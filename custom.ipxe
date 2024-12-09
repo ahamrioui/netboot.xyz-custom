@@ -31,7 +31,7 @@ boot || goto custom_exit
 
 :option_three
 echo Chains into another menu...
-chain https://raw.githubusercontent.com/${github_user}/netboot.xyz-custom/master/custom1.ipxe || goto custom
+chain http://192.168.1.94:50000/boot.ipxe || goto custom
 
 :custom_exit
 chain utils.ipxe
